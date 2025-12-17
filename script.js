@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 x: (Math.random() - 0.5) * 5,
                 y: Math.random() * 5 + 2
             };
-            this.color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+            this.color = `hsl(${Math.random() * 50 + 40}, 70%, 70%)`; // Gold/Yellowish hues
             this.radius = Math.random() * 5 + 2;
             this.gravity = 0.1;
             this.opacity = 1;
