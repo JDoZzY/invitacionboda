@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gradient-bg"></div>
+    <div class="overlay"></div>
+
+    <main class="container">
+        <header class="hero fade-in">
+            <p class="eyebrow">Estás invitado al</p>
+            <h1 class="title">Cumpleaños de <br><span class="highlight">Sofía</span></h1>
+            <p class="subtitle">Celebremos juntos otro año de momentos increíbles.</p>
+        </header>
+
+        <section class="details scroll-reveal">
+            <div class="card glass">
+                <div class="detail-item">
+                    <span class="icon">📅</span>
+                    <h3>CUÁNDO</h3>
+                    <p>Sábado, 25 de Octubre</p>
+                    <p class="small">2025</p>
+                </div>
+                <div class="detail-item">
+                    <span class="icon">⏰</span>
+                    <h3>HORA</h3>
+                    <p>8:00 PM</p>
+                    <p class="small">Hasta el amanecer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="location scroll-reveal">
+            <div class="card glass">
+                <span class="icon">📍</span>
+                <h3>DÓNDE</h3>
+                <p class="location-name">Salón "El Jardín Secreto"</p>
+                <p class="address">Av. Siempre Viva 123, Ciudad Elegante</p>
+                <a href="https://maps.google.com" target="_blank" class="map-btn">Ver Mapa</a>
+            </div>
+        </section>
+
+        <section class="countdown-section scroll-reveal">
+            <h2>Faltan</h2>
+            <div id="countdown" class="countdown-container">
+                <div class="time-unit">
+                    <span id="days">00</span>
+                    <label>Días</label>
+                </div>
+                <div class="time-unit">
+                    <span id="hours">00</span>
+                    <label>Hrs</label>
+                </div>
+                <div class="time-unit">
+                    <span id="minutes">00</span>
+                    <label>Min</label>
+                </div>
+                <div class="time-unit">
+                    <span id="seconds">00</span>
+                    <label>Seg</label>
+                </div>
+            </div>
+            <div class="calendar-links">
+                <a href="#" class="calendar-btn" id="googleCal">Agendar en Google Calendar</a>
+            </div>
+        </section>
+
+        <section class="gallery scroll-reveal">
+            <h2>Momentos Inolvidables</h2>
+            <div class="masonry-grid">
+                <div class="grid-item"><img src="1.jpg" alt="Momento 1"></div>
+                <div class="grid-item"><img src="2.jpg" alt="Momento 2"></div>
+                <div class="grid-item"><img src="3.jpg" alt="Momento 3"></div>
+                <div class="grid-item"><img src="4.jpg" alt="Momento 4"></div>
+            </div>
+        </section>
+
+        <section class="rsvp scroll-reveal">
+            <button id="rsvpBtn" class="cta-button">Confirmar Asistencia</button>
+        </section>
+
+        <footer class="footer">
+            <p>Te esperamos para brillar juntos.</p>
+        </footer>
+    </main>
+
+    <!-- Modal -->
+    <div id="rsvpModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close">&times;</span>
+            <h2>¿Vienes a la fiesta?</h2>
+            <p>No sería lo mismo sin ti.</p>
+            <div class="modal-actions">
+                <button id="confirmBtn" class="btn primary">¡Obvio que sí!</button>
+                <button id="declineBtn" class="btn secondary">No puedo ir :(</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
