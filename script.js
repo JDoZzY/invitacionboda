@@ -143,6 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
         rsvpBtn.textContent = "¡Asistencia Confirmada! 🎉";
         rsvpBtn.style.background = "#4CAF50";
         rsvpBtn.style.color = "white";
+
+        // Revelar detalles de ubicación en toda la página
+        document.body.classList.add('confirmed');
+
         startConfetti();
 
         // Redirección a WhatsApp

@@ -200,6 +200,23 @@ h3 {
     color: #fff;
 }
 
+/* Control de visibilidad de ubicación */
+.loc-real {
+    display: none !important;
+}
+
+body.confirmed .loc-real {
+    display: block !important;
+}
+
+body.confirmed .map-btn.loc-real {
+    display: inline-block !important;
+}
+
+body.confirmed .loc-placeholder {
+    display: none !important;
+}
+
 /* Countdown */
 .countdown-section h2 {
     font-size: 3rem;
