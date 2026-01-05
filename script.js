@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function openEnvelope() {
         if (!envelope.classList.contains('open')) {
             envelope.classList.add('open');
+            document.body.classList.add('envelope-opened');
+            window.scrollTo(0, 0);
             playMusic();
 
             // Reintento de seguridad a los 500ms y 1s para asegurar el audio
@@ -41,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Eventos de Apertura (ELIMINADO SCROLL)
     envelope.addEventListener('click', openEnvelope);
-    envelope.addEventListener('touchstart', openEnvelope, { passive: true });
 
     // Control Manual de Música
     musicBtn.addEventListener('click', (e) => {
@@ -145,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startConfetti();
 
         // Redirección a WhatsApp
-        const phoneNumber = "50244440202"; // Número de Guatemala configurado
+        const phoneNumber = "50256155387"; // Número de Guatemala actualizado
         const message = encodeURIComponent("¡Hola! Confirmo mi asistencia a la boda de J y E. ¡Nos vemos pronto! 🎉💍");
         setTimeout(() => {
             window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
