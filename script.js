@@ -147,6 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Revelar detalles de ubicación en toda la página
         document.body.classList.add('confirmed');
 
+        // Scroll automático suave a la ubicación revelada
+        setTimeout(() => {
+            const locationSection = document.getElementById('location-section');
+            if (locationSection) {
+                locationSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 300);
+
         startConfetti();
 
         // Redirección a WhatsApp
