@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Función principal de     apertura
+    // Función principalde apertura
     function openEnvelope() {
         if (!envelope.classList.contains('open')) {
             envelope.classList.add('open');
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     envelope.addEventListener('click', openEnvelope);
     envelope.addEventListener('click', openEnvelope);
 
-    // Control Manual de Música 
+    // Control Manual de Música
     musicBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         if (isPlaying) {
